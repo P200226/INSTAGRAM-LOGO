@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+
+   
+        body{
+            background-color: black;
+        }
+
+
+        
+        .insta{
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle at 30% 107% , #fdf497 0% , #fdf497 5% , #fdf497 45% , #d6249f 60% , #285aeb 90%);
+            border-radius: 35px;
+            display: grid;
+            place-items: center;
+        }
+
+        .innerbox{
+            width: 120px;
+            height: 120px;
+            border: 10 solid #fff;
+            border-radius: 32px;
+            display: grid;
+            place-items: center;
+            position: relative;
+        }
+        .innerbox::before{
+            content: '';
+            width: 45px;
+            height: 45px;
+            border: 10px solid #fff;
+            border-radius: 50%;
+            position:absolute;
+        }
+
+        .innerbox::after{
+            content: '';
+            width: 10px;
+            height: 10px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            position:absolute;
+            top: 8px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="insta">
+        <div class="innerbox"></div>
+    </div>
+</center>
+</body>
+</html>
